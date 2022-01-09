@@ -7,6 +7,18 @@
     transform: translate(-50%, -50%);
 }
 
+.btn{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.btn_sb{
+  height: 30px;
+  width: 100px;
+  border-radius: 3px;
+}
+
 .row {
   align-items: center;
   justify-content: center;
