@@ -6,7 +6,7 @@ def demo():
     return render_template('demo.html')
 
 @app.route('/submit',methods=['POST','GET'])
-def predict():
+def submit():
     return render_template('demo.html')
 
 
