@@ -23,8 +23,7 @@
   - Kích hoạt môi trường ảo : source venv/bin/activate
 * Các thư viện cần cài đặt
   - pip install tensorflow-gpu==1.15
-  - pip install torch==1.8.1+cpu torchvision==0.9.1+cpu
-  - torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+  - pip install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
   - pip install cmake
   - pip install dlib -vvv
   - pip install matplotlib
