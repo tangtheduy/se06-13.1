@@ -12,3 +12,6 @@ def run(path):
     img = Image.open(path)
     out = face2paint(model, img)
     return out
+
+
+

@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request,redirect,url_for
 from PIL import Image
-import animegan2 as a
+import animegan as a
 import os
 
-UPLOAD_FOLDER = 'static//upload/'
+UPLOAD_FOLDER = 'static/upload/'
 OUTPUT_FOLDER = 'static/output/'
 app = Flask(__name__,template_folder='template',static_folder='static')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -21,9 +21,22 @@ def run():
             return 'there is no file1 in form!'
         file = request.files['myFile']
         filename = file.filename
-        path_ip = os.path.join(app.config['UPLOAD_FOLDER'], filename)        
-        file.save(path_ip) 
-        output = a.run(path_ip)
+        # file.save(path_ip) 
+        path_ip = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(path_ip)
+        out = a.run(path_ip)
+        width, height = out.size 
+        
+        left_o = width/2
+        left_i =0
+        right_o = width
+        right_i = width/2
+        top = 0        
+        bottom = height        
+        
+        input = out.crop((left_i, top, right_i, bottom))
+        output = out.crop((left_o, top, right_o, bottom))
+        input.save(path_ip)
         path_op = os.path.join(app.config['OUTPUT_FOLDER'], filename)
         output.save(path_op)         
         return render_template('demo.html',filename=filename)
@@ -37,6 +50,7 @@ def root(filename):
 @app.route("/show/<filename>") 
 def show(filename):
     return redirect(url_for('static',filename='output/'+filename),code=301)
+
 
 if __name__=="__main__":
     app.run()
