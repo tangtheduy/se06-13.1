@@ -11,9 +11,27 @@
 ### 3. Yêu cầu về môi trường để sử dụng project
 * 
 ### 4. Cách cài đặt môi trường và thư viện
-*
+* Các lệnh cài môi trường
+  - python 3.6 : 
+    - sudo add-apt-repository ppa:deadsnakes/ppa
+    - sudo apt-get update
+    - sudo apt-get install python3.6
+  - Môi trường ảo : 
+    -  sudo apt-get update
+    -  sudo apt-get install python3-virtualenv
+    - virtualenv -p /usr/bin/python3.6 venv
+  - Kích hoạt môi trường ảo : source venv/bin/activate
+* Các thư viện cần cài đặt
+  - pip install tensorflow-gpu==1.15
+  - pip install torch==1.8.1+cpu torchvision==0.9.1+cpu
+  - torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+  - pip install cmake
+  - pip install dlib -vvv
+  - pip install matplotlib
+  - pip install scipy
+  - pip install requests
 ### 5. Cách sử dụng project
-*
+* 
 ### 6.
 ### 7.. Thành viên nhóm
 * Lê Minh Dũng : Trưởng nhóm
