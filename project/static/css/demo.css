@@ -48,9 +48,8 @@
 }
 
 .img_input{
-  max-width: 400px;
+  width: 400px;
   height: 400px;
-  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
