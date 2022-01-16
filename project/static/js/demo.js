@@ -48,6 +48,11 @@ function updateThumbnail(dropZoneElement, file) {
     dropZoneElement.querySelector(".drop-zone__prompt").remove();
   }
 
+  // First time - remove the prompt
+  if (dropZoneElement.querySelector(".img__prompt")) {
+    dropZoneElement.querySelector(".img__prompt").remove();
+  }
+
   // First time - there is no thumbnail element, so lets create it
   if (!thumbnailElement) {
     thumbnailElement = document.createElement("div");

@@ -1,27 +1,38 @@
 <head>
-    <title>Drag and Drop File Upload</title>
+    <title>SE06-13.1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" media="all"  href="{{ url_for('static', filename='css/demo.css')}}">
 </head>
 
 <body>
-    <form action='/submit' method="POST">
-    <div class="row ">
-        <div class="column drop-zone">
-            <span class="drop-zone__prompt">Nhấn nút vào hoặc kéo thả ảnh vào đây </span>
-            <input type="file" name="myFile" class="drop-zone__input">
+    <form action='/' method="post" enctype="multipart/form-data">
+        <div class="row ">
+            <div class="column drop-zone">                
+                {% if filename %}
+                    <img class="img_input img__prompt" src="{{ url_for('root', filename=filename)}}">
+                    <input type="file" name="myFile" class="drop-zone__input">
+                {% else %}
+                    <span class="drop-zone__prompt">Nhấn nút vào hoặc kéo thả ảnh vào đây </span>
+                    <input type="file" name="myFile" class="drop-zone__input">
+                {% endif %}
+            </div>
+
+            <div class="column drop-zone">
+                {% if filename %}
+                    <img class="drop-zone" src="{{ url_for('show', filename=filename)}}">
+                {% else %}
+                    <span class="drop-zone__prompt">Kết quả </span>
+                {% endif %}
+            </div>
+
         </div>
 
-        <div class="column drop-zone">
-            <span class="drop-zone__prompt">Kết quả </span>
+        <div class="btn">
+            <button type="submit" class="btn_sb">Submit</button>
         </div>
-    </div>
-    <div class="btn">
-        <button type="submit" class="btn_sb">Submit</button>
-    </div>
     </form>
+
 
     <script src="/static/js/demo.js"></script>
 </body>
