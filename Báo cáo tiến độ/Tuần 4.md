@@ -1,5 +1,5 @@
 # Báo cáo Tuần 3
-## Nội dung chính: Xây dựng giao diện up ảnh, kết nối với Flask để xử lý ảnh, trả về đã được xử lý về cho người dùng 
+## Nội dung chính: Xây dựng giao diện up ảnh, kết nối với Flask để xử lý ảnh, trả về ảnh đã được xử lý về cho người dùng 
 
 ### 1. Xây dựng giao diện up ảnh
 
