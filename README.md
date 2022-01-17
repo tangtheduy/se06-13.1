@@ -30,7 +30,17 @@
   - pip install scipy
   - pip install requests
 ### 5. Cách sử dụng project
-* 
+* Clone git
+    ```
+   git clone https://github.com/tangtheduy/se06-13.1.git
+   ```
+* Chạy Flask
+  ```
+   export FLASK_APP=demo.py
+   ```
+   ```
+   flask run
+   ```
 ### 6.
 ### 7.. Thành viên nhóm
 * Lê Minh Dũng : Trưởng nhóm
