@@ -18,6 +18,7 @@
     - sudo apt-get install python3.6
   - Môi trường ảo : 
     -  sudo apt-get update
+    -  sudo apt install build-essential
     -  sudo apt-get install python3-virtualenv
     - virtualenv -p /usr/bin/python3.6 venv
   - Kích hoạt môi trường ảo : source venv/bin/activate
