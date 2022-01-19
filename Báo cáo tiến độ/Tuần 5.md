@@ -7,5 +7,5 @@
 ### 2. Kiểm tra chi tiết tổng thể
 
 * Chỉnh sửa giao diện chính.
-* Test những hình mang nhiều chi tiết ảnh và có độ pixel khác nhau.
+* Test những hình mang nhiều chi tiết ảnh và có độ phân giải khác nhau.
 * Khắc phục những chi tiết lỗi nhỏ trong việc xác định khuôn mặt.
