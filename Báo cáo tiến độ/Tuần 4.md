@@ -11,3 +11,5 @@
 * Kết nối thành công
 * Ảnh được xử lý trả về cho người dùng
 * Cần 1 số thay đổi để ảnh được đẹp hơn, xử lý nhanh hơn
+
+### 3. Tìm hiểu và sử dụng Terminus

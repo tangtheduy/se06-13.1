@@ -9,4 +9,6 @@
 ### 2. Hoàn thành dự án và làm báo cáo.
 * Project đã tương đối hoàn chỉnh.
 * Hoàn thiện báo cáo đồ án và file readme.md 
+* Làm phần hướng dẫn sử dụng trong file readme.md
+* Nghiên cứu yêu cầu về môi trường chạy project
 

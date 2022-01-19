@@ -1,5 +1,5 @@
 # Báo cáo Tuần 5
-## Nội dung chính: Nâng cấp nhận diện ảnh, Kiểm tra chi tiết tổng thể. 
+## Nội dung chính: Nâng cấp nhận diện ảnh, Kiểm tra chi tiết tổng thể, tạo tài khoản cho người dùng. 
 
 ### 1. Nâng cấp nhận diện ảnh
 
@@ -7,5 +7,9 @@
 ### 2. Kiểm tra chi tiết tổng thể
 
 * Chỉnh sửa giao diện chính.
+* Thao khảo 1 số source web tương tự.
 * Test những hình mang nhiều chi tiết ảnh và có độ phân giải khác nhau.
 * Khắc phục những chi tiết lỗi nhỏ trong việc xác định khuôn mặt.
+
+### 3. Thêm tính năng đăng nhập cho người dùng web
+* Đang thực thi
