@@ -1,5 +1,5 @@
 # Báo cáo Tuần 5
-## Nội dung chính: Nâng cấp nhận diện ảnh, Kiểm tra chi tiết tổng thể, tạo tài khoản cho người dùng. 
+## Nội dung chính: Nâng cấp nhận diện ảnh, Kiểm tra chi tiết tổng thể, delop project lên máy ảo
 
 ### 1. Nâng cấp nhận diện ảnh
 
@@ -11,5 +11,6 @@
 * Test những hình mang nhiều chi tiết ảnh và có độ phân giải khác nhau.
 * Khắc phục những chi tiết lỗi nhỏ trong việc xác định khuôn mặt.
 
-### 3. Thêm tính năng đăng nhập cho người dùng web
-* Đang thực thi
+### 3. Delop project lên máy ảo
+* Cài đặt VPS.
+* Đang thực thi delop
