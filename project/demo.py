@@ -16,30 +16,36 @@ def demo():
 
 @app.route("/",methods=['POST'])
 def run():
+    print("start")
     if request.method == "POST":
         if 'myFile' not in request.files:
             return 'there is no file1 in form!'
         file = request.files['myFile']
+        if not file: return redirect(request.url)
         filename = file.filename
-        # file.save(path_ip) 
         path_ip = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        file.save(path_ip)
-        out = a.run(path_ip)
-        width, height = out.size 
+        file.save(path_ip)         
+        try:
+            out = a.run(path_ip)
+            width, height = out.size 
+            
+            left_o = width/2
+            left_i =0
+            right_o = width
+            right_i = width/2
+            top = 0        
+            bottom = height        
+            
+            input = out.crop((left_i, top, right_i, bottom))
+            output = out.crop((left_o, top, right_o, bottom))
+            input.save(path_ip)
+            path_op = os.path.join(app.config['OUTPUT_FOLDER'], filename)
+            output.save(path_op)    
+            return render_template('demo.html',filename=filename)
+             
+        except Exception:
+            return redirect(request.url)
         
-        left_o = width/2
-        left_i =0
-        right_o = width
-        right_i = width/2
-        top = 0        
-        bottom = height        
-        
-        input = out.crop((left_i, top, right_i, bottom))
-        output = out.crop((left_o, top, right_o, bottom))
-        input.save(path_ip)
-        path_op = os.path.join(app.config['OUTPUT_FOLDER'], filename)
-        output.save(path_op)         
-        return render_template('demo.html',filename=filename)
     else:
         return redirect(request.url)
 

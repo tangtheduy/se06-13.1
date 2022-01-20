@@ -172,6 +172,7 @@ def align_and_crop_face(
     img = img.transform((transform_size, transform_size), PIL.Image.QUAD, (quad + 0.5).flatten(), PIL.Image.BILINEAR)
     if output_size < transform_size:
         img = img.resize((output_size, output_size), PIL.Image.ANTIALIAS)
+    # img.show()
     return img
 
 
@@ -181,10 +182,7 @@ import requests
 
 
 def run(path):
-    # img = Image.open(requests.get("https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg", stream=True).raw).convert("RGB")
-    # path="https://taimienphi.vn/tmp/cf/aut/anh-gai-xinh-1.jpg"
-    # img = Image.open(requests.get(path, stream=True).raw).convert("RGB")
-    # print(type(img))
+   
     img = Image.open(path).convert("RGB")
 
     face_detector = get_dlib_face_detector()
@@ -193,11 +191,13 @@ def run(path):
     display_facial_landmarks(img, landmarks, fig_size=[5, 5])
     for landmark in landmarks:
         face = align_and_crop_face(img, landmark, expand=1.3)
-        out = face2paint(model=model, img=face)
+        out = face2paint(model, face)
+        if out:
+            return out
         
     
-    return out
+   
 
 
-# path="project/static/upload/images.jpg"
+# path="project/static/upload/images.jpeg"
 # run(path).show()
