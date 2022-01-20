@@ -9,7 +9,10 @@
 
 Ảnh từ user sẽ được truyền vào web server -> ML Server để xử lý hình ảnh. Ảnh sau xử lý  sẽ được gửi về user
 ### 3. Yêu cầu về môi trường để sử dụng project
-* 
+* Ubuntu (20.04)
+* Python 3.6
+* Tensorflow-gpu 1.15
+
 ### 4. Cách cài đặt môi trường và thư viện
 * Các lệnh cài môi trường
   - python 3.6 : 
@@ -42,8 +45,10 @@
    ```
    flask run
    ```
-### 6.
-### 7.. Thành viên nhóm
+### 6. Cách chạy trên web
+
+
+### 7. Thành viên nhóm
 * Lê Minh Dũng : Trưởng nhóm
 * Bùi Việt Anh
 * Tăng Thế Duy
