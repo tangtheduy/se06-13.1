@@ -1,7 +1,7 @@
 # se06-13.1
 ## Tên đề tài : Nhận dạng khuôn mặt và xử lý thành cartoon, áp các filter như tiktok. (Đề tài mới do anh Hào hướng dẫn)
 ![gif mới](https://user-images.githubusercontent.com/58498756/150540972-2f89575d-43c4-4cff-83ce-734ac8075bea.gif)
-### 1.Mục tiêu  
+### 1. Mục tiêu  
 * Mục tiêu chính: Biến ảnh chụp người thành dạng như hoạt hình - [link web mẫu](https://huggingface.co/spaces/akhaliq/AnimeGANv2)
 * Biết sử dụng Flask làm web server
 * Làm quen với Machine Learning
