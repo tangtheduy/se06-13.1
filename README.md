@@ -36,7 +36,7 @@
 ### 2. Kiến trúc tổng thể của dự án
 ![flowchart](https://user-images.githubusercontent.com/58498756/149651768-e0a36e45-1f80-400a-8ada-056687d46218.png)
 
-Ảnh từ user sẽ được truyền vào web server -> ML Server để xử lý hình ảnh. Ảnh sau xử lý  sẽ được gửi về user
+Ảnh từ `user` sẽ được truyền vào `web server` -> `ML Server` để xử lý hình ảnh. Ảnh sau xử lý  sẽ được gửi về `user`
 <a name="3"></a>
 ### 3. Yêu cầu về môi trường để sử dụng project
 * `Ubuntu (20.04)`
