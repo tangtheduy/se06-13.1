@@ -30,8 +30,8 @@
 <a name="1"></a>
 ### 1. Mục tiêu  
 * Mục tiêu chính: Biến ảnh chụp người thành dạng như hoạt hình - [link web mẫu](https://huggingface.co/spaces/akhaliq/AnimeGANv2)
-* Biết sử dụng Flask làm web server
-* Làm quen với Machine Learning
+* Biết sử dụng `Flask` làm web server
+* Làm quen với `Machine Learning`
 <a name="2"></a>
 ### 2. Kiến trúc tổng thể của dự án
 ![flowchart](https://user-images.githubusercontent.com/58498756/149651768-e0a36e45-1f80-400a-8ada-056687d46218.png)
@@ -39,10 +39,10 @@
 Ảnh từ user sẽ được truyền vào web server -> ML Server để xử lý hình ảnh. Ảnh sau xử lý  sẽ được gửi về user
 <a name="3"></a>
 ### 3. Yêu cầu về môi trường để sử dụng project
-* Ubuntu (20.04)
-* Python 3.6
-* Tensorflow-gpu 1.15
-* torch >= 1.7.1
+* `Ubuntu (20.04)`
+* `Python 3.6`
+* `Tensorflow-gpu 1.15`
+* `torch >= 1.7.1`
 <a name="4"></a>
 ### 4. Cách cài đặt môi trường và thư viện
 <a name="4.1"></a>
