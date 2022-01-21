@@ -1,5 +1,6 @@
 # se06-13.1
 ## Tên đề tài : Nhận dạng khuôn mặt và xử lý thành cartoon, áp các filter như tiktok. (Đề tài mới do anh Hào hướng dẫn)
+![gif mới](https://user-images.githubusercontent.com/58498756/150540972-2f89575d-43c4-4cff-83ce-734ac8075bea.gif)
 ### 1.Mục tiêu  
 * Mục tiêu chính: Biến ảnh chụp người thành dạng như hoạt hình - [link web mẫu](https://huggingface.co/spaces/akhaliq/AnimeGANv2)
 * Biết sử dụng Flask làm web server
@@ -12,7 +13,7 @@
 * Ubuntu (20.04)
 * Python 3.6
 * Tensorflow-gpu 1.15
-
+* torch >= 1.7.1
 ### 4. Cách cài đặt môi trường và thư viện
 * Các lệnh cài môi trường
   - python 3.6 : 
@@ -38,14 +39,18 @@
     ```
    git clone https://github.com/tangtheduy/se06-13.1.git
    ```
-* Chạy Flask
+* Kích hoạt môi trường sau khi đã cài đặt các thư viện ở trên
+  ```
+   source venv/bin/activate
+   ```
+* Chạy Flask trong folder project
   ```
    export FLASK_APP=demo.py
    ```
    ```
    flask run
    ```
-### 6. Cách chạy trên web
+### 6. Cách để test chức năng mà không cần cài đặt
 Có thể truy cập qua link
    ```
   http://20.119.45.196/
@@ -56,4 +61,3 @@ Có thể truy cập qua link
 * Bùi Việt Anh
 * Tăng Thế Duy
 * Trần Khánh Duy
-
