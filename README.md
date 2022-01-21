@@ -46,7 +46,10 @@
    flask run
    ```
 ### 6. Cách chạy trên web
-
+Có thể truy cập qua link
+   ```
+  http://20.119.45.196/
+  ``` 
 
 ### 7. Thành viên nhóm
 * Lê Minh Dũng : Trưởng nhóm
